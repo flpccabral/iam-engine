@@ -7,7 +7,7 @@ iam:
     create: Criado
     dashboard: Painel
     description: Descrição
-    email: Email
+    email: E-mail
     export: Exportar
     group: Grupos
     member: Membros
@@ -60,14 +60,16 @@ iam:
       view-user-permissions:
         view-permissions: 'Usuário: {userName} Permissões'
       change-user-email:
-        title: Change User Email
-        heading: Change email for {userName}
-        prompt: Enter the new email address. The user must verify the new address before it becomes their login email.
-        current-email: Current Email
-        new-email: New Email
-        send-verification: Send Verification
-        email-required: A new email address is required.
-        verification-sent: Email change verification sent. The user must confirm the new address before their login email changes.
+        title: Alterar E-mail do Usuário
+        heading: Alterar o e-mail de {userName}
+        prompt: Digite o novo endereço de e-mail. O usuário precisa verificar o novo endereço
+          antes que ele se torne seu e-mail de login.
+        current-email: E-mail Atual
+        new-email: Novo E-mail
+        send-verification: Enviar Verificação
+        email-required: É necessário informar um novo endereço de e-mail.
+        verification-sent: Verificação de troca de e-mail enviada. O usuário precisa confirmar
+          o novo endereço antes que o e-mail de login seja alterado.
       role-form:
         role-name: Nome da Função
         enter-name-for-this-role: Digite um nome para esta função
@@ -147,6 +149,27 @@ iam:
         o endereço de e-mail do usuário. Tem certeza de que deseja ignorar a verificação
         para este usuário?
       user-verified-success-message: Usuário {userName} verificado.
+      mark-verified-title: Marcar o {channel} de {userName} como verificado
+      mark-verified-prompt: Isso marca o {channel} do usuário como verificado sem que ele
+        precise confirmar. Tem certeza?
+      send-verification-title: Enviar verificação de {channel}
+      send-verification-prompt: '{userName} receberá um link em {destination} para confirmar.
+        O link expira em 48 horas.'
+      send-verification: Enviar verificação
+      verification-sent: Link de verificação enviado para {destination}.
+      channel-email: endereço de e-mail
+      channel-phone: número de telefone
+      send-email-verification: Enviar verificação de e-mail...
+      send-phone-verification: Enviar verificação de telefone...
+      mark-email-verified: Marcar e-mail como verificado...
+      mark-phone-verified: Marcar telefone como verificado...
+      email-verified: E-mail Verificado
+      phone-verified: Telefone Verificado
+      verified: Verificado
+      unverified: Não verificado
+      timezone: Fuso Horário
+      date-of-birth: Data de Nascimento
+      ip-address: Endereço IP
       delete-users: Excluir Usuários
       last-login: Último Login
       created-at: Criado Em
@@ -160,11 +183,12 @@ iam:
       delete-user: Excluir usuário...
       verify-user: Verificar usuário...
       change-user-password: Alterar senha do usuário...
-      change-user-email: Change user email...
+      change-user-email: Alterar e-mail do usuário...
       new-user: Novo Usuário
       user-invited-join-your-organization-success: Usuário foi convidado para entrar
         na sua organização.
       edit-user-title: Editar Usuário
+      new-user-created: Novo usuário adicionado à organização.
       user-changes-saved-success: Alterações do usuário salvas.
       error-you-cant-delete-yourself: Você não pode se excluir
       data-assosciated-user-delete: Tem certeza de que deseja excluir este usuário?
@@ -180,6 +204,26 @@ iam:
         confirmar, o Fleetbase reenviará o convite para este usuário entrar na sua
         organização.
       invitation-resent: Convite reenviado.
+      invite-user: Convidar Usuário
+    invite:
+      title: Convidar Usuário
+      description: Digite o e-mail da pessoa que você quer convidar. Se ela já tiver uma
+        conta no Fleetbase, receberá um convite para entrar na sua organização. Se for
+        nova, uma conta pendente será criada e ela precisará definir uma senha ao aceitar
+        o convite.
+      email-placeholder: colega@exemplo.com
+      name-placeholder: Nome completo (obrigatório para novos usuários)
+      name-help: Obrigatório apenas se a pessoa ainda não tiver uma conta no Fleetbase.
+      send-invitation: Enviar Convite
+      email-required: Informe um endereço de e-mail.
+      invitation-sent-existing: Convite enviado. O usuário receberá um e-mail para entrar
+        na sua organização.
+      invitation-sent-new: Convite enviado. Uma conta pendente foi criada e o usuário
+        precisará definir uma senha.
+    role-required: Selecione uma função para este usuário.
+    notifications:
+      promoted-existing-account: A conta existente de {type} de {name} foi promovida a
+        membro da equipe.
   application:
     access-management: Gerenciamento de Acesso
   home:
