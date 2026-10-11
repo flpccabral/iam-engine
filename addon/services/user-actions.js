@@ -141,7 +141,7 @@ export default class UserActionsService extends ResourceActionService {
                 modal.startLoading();
 
                 if (this.abilities.cannot(formPermission)) {
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
 
                 // A role is always chosen explicitly: no access is granted by default
@@ -211,7 +211,7 @@ export default class UserActionsService extends ResourceActionService {
                 modal.startLoading();
 
                 if (this.abilities.cannot(formPermission)) {
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
 
                 try {

@@ -42,7 +42,7 @@ export default class GroupActionsService extends ResourceActionService {
                 modal.startLoading();
 
                 if (this.abilities.cannot(formPermission)) {
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
                 try {
                     await group.save();
@@ -83,7 +83,7 @@ export default class GroupActionsService extends ResourceActionService {
                 modal.startLoading();
 
                 if (this.abilities.cannot(formPermission)) {
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
 
                 try {

@@ -54,7 +54,7 @@ export default class RoleActionsService extends ResourceActionService {
 
                 if (this.abilities.cannot(formPermission)) {
                     modal.stopLoading();
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
 
                 try {
@@ -109,7 +109,7 @@ export default class RoleActionsService extends ResourceActionService {
 
                 if (this.abilities.cannot(formPermission)) {
                     modal.stopLoading();
-                    return this.notifications.warning(this.intl.t('common.permissions-required-for-changes'));
+                    return this.notifications.warning(this.intl.t('iam.common.permissions-required-for-changes'));
                 }
 
                 try {

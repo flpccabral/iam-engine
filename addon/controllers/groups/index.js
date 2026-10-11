@@ -154,7 +154,7 @@ export default class GroupsIndexController extends Controller {
 
         this.crud.bulkDelete(selected, {
             modelNamePath: `name`,
-            acceptButtonText: this.intl.t('aim.groups.index.delete-group'),
+            acceptButtonText: this.intl.t('iam.groups.index.delete-group'),
             onSuccess: () => {
                 return this.hostRouter.refresh();
             },

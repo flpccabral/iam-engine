@@ -32,6 +32,7 @@ iam:
     service: Service
     reload: Reload
     reload-data: Reload data
+    permissions-required-for-changes: "You do not have the permissions required to make these changes."
   components:
     widget:
       metrics:
